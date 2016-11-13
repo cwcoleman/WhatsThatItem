@@ -1,0 +1,18 @@
+<html>
+<title>Search results...</title>
+<body>
+<p>Current number of results found are: {{len(search_results)}}</p>
+<table BORDER="2">
+    % for key, value in search_results.iteritems():
+    <tr bgcolor="yellow"><td align="center" colspan="2" bgcolor="red">SOAP Event objs in our list</td></tr>
+    <tr>
+        <td style="white-space: nowrap">Part Number: {{key}}</td>
+        <td><pre>Name: {{value['name']}}</pre></td>
+        <td><pre>Short Description: {{value['short_desc']}}</pre></td>
+        <td><pre>Long Description: {{value['long_desc']}}</pre></td>
+        <td><pre><img src="{{value['image']}}" alt="{{value['name']}}" /></pre></td>
+    </tr>
+    % end
+</table>
+</body>
+</html>

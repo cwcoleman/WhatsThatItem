@@ -1,0 +1,12 @@
+<html>
+<title>FergiFinder: Part identification made easy!</title>
+<body>
+<p>Take a picture of the part, scan a barcode or enter the name: </p>
+<form action="/" method="post">
+    <p>Picture upload: <input name="pic" type="image" /></p>
+    <p>Scan barcode: <input name="barcode" type="file" /></p>
+    <p>Name of part: <input name="part_name" type="text" /></p>
+    <input value="search" type="submit" />
+</form>
+</body>
+</html>
